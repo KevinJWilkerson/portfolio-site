@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'ryman_ecoregular';
+    src: url('./fonts/Ryman\ Eco/rymaneco-regular-webfont.woff2') format('woff2'),
+         url('./fonts/Ryman\ Eco/rymaneco-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --tertiary-color: green;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--secondary-color);
+}
+
+/* header & nav bar styles start */
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px 25px;
+    align-items: center;
+    background-color: var(--secondary-color);
+    font-family: 'ryman_ecoregular', Arial, sans-serif;
+    font-weight: normal;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: normal;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+    font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+}
+
+/* header & nav bar styles end */
+
