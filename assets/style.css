@@ -38,6 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 9999;
 }
 
 header h1 {
@@ -74,3 +75,125 @@ header nav ul li a:hover {
 
 /* header & nav bar styles end */
 
+/* footer style starts */
+
+footer {
+    display: block;
+    background-color: black;
+}
+
+/* footer style ends */
+
+/* hero section starts */
+.hero {
+    display: flex;
+    background-image: url(/assets/images/kevinW-3374.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    justify-content: space-around;
+    min-height: 400px;
+    padding: 10px;
+}
+.hero img {
+    justify-content: space-around;
+    width: 100%;
+}
+/* hero section ends */
+
+/* section style starts */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+.section-title {
+    padding: 15px 15px 0 0;
+    width: 25%;
+    font-family: 'ryman_ecoregular', Arial, sans-serif;
+    font-weight: normal;
+    text-align: right;
+}
+
+.section-content {
+    padding: 15px 0 0 15px;
+    width: 75%;
+}
+
+.section-content a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.section-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+.section-content ul li {
+    padding: 10px 15px;
+    font-size: 1.55vw;
+}
+
+.section-content ul li a:hover {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+}
+
+.work-collection {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-samples {
+    position: relative;
+    flex-basis: 48%;
+    padding: 0.5em;
+    margin: 5px 5px;
+}
+
+.work-samples-hero {
+    flex-basis: 100%;
+}
+
+.work-samples img {
+    max-width: 100%;
+    max-height: 100%;
+    border: black solid 1px;
+    z-index: 0;
+}
+
+.work-samples span {
+    text-align: center;
+}
+/* section style ends */
+
+
+
+/* font awesome icons */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  /* LinkedIn */
+  .fa-linkedin {
+    background: #0e76a8;
+    color: white;
+  }
