@@ -87,17 +87,17 @@ footer {
 /* hero section starts */
 .hero {
     display: flex;
-    background-image: url(/assets/images/kevinW-3374.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 20%;
     justify-content: space-around;
-    min-height: 400px;
-    padding: 10px;
+    height: 400px;
 }
+
 .hero img {
-    justify-content: space-around;
+    position: absolute;
+    object-fit: cover;
+    object-position: 50% 10%;
     width: 100%;
+    height: auto;
+    max-height: 400px;
 }
 /* hero section ends */
 
@@ -213,7 +213,16 @@ a {
     }
 
     .hero {
-        min-height: 200px;
+        height: 275px;
+    }
+
+    .hero div {
+        height: 200px;
+    }
+
+    .hero img {
+        object-fit: cover;
+        display: block;
     }
 
     .work-samples {
